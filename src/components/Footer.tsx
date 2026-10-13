@@ -213,7 +213,7 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
             <span className="text-xs text-foreground/20 font-mono ml-1">
-              Available for new opportunities
+              Code on. 
             </span>
           </div>
         </div>
