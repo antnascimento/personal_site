@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>António Nascimento — Senior Software Engineer</title>
+  <meta name="description" content="Personal portfolio of António Nascimento — Senior Software Engineer at Zalando in Berlin. 13+ years of building scalable backend architectures and digital experiences." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="loader-name">António Nascimento</div>
+      <div class="loader-bar-bg">
+        <div id="loader-bar-fill" class="loader-bar-fill"></div>
+      </div>
+      <div id="loader-percent" class="loader-percent">0%</div>
+    </div>
+  </div>
+
+  <!-- Top Scroll Progress Line -->
+  <div id="scroll-progress">
+    <div id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar" class="navbar">
+    <a href="#" class="nav-brand">Portfolio</a>
+    <div class="nav-links">
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- 500vh Scrollytelling Section -->
+  <section id="scrolly-container" class="scrolly-container">
+    <div class="sticky-viewport">
+      <!-- HTML5 Canvas scrubber -->
+      <canvas id="scrolly-canvas"></canvas>
+
+      <!-- Overlay Sections -->
+      <div class="overlay">
+        <!-- Section 1: Hero -->
+        <div id="section-hero" class="overlay-section section-hero">
+          <p class="eyebrow">Senior Software Engineer · Zalando</p>
+          <h1 class="hero-title">
+            António<br />Nascimento.
+          </h1>
+          <div class="hero-divider"></div>
+          <p class="hero-subtitle">Backend · Frontend · Berlin</p>
+          <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+          </div>
+        </div>
+
+        <!-- Section 2: Craft -->
+        <div id="section-craft" class="overlay-section section-craft">
+          <div class="section-content-left">
+            <p class="eyebrow">01 / Craft</p>
+            <h2 class="section-heading">
+              I build digital<br />
+              <span class="accent-glow">experiences.</span>
+            </h2>
+            <p class="section-desc">
+              Over 13 years crafting resilient backend architectures and interactive frontends for millions of users at Europe's leading fashion platform.
+            </p>
+          </div>
+        </div>
+
+        <!-- Section 3: Vision -->
+        <div id="section-vision" class="overlay-section section-vision">
+          <div class="section-content-right">
+            <p class="eyebrow">02 / Vision</p>
+            <h2 class="section-heading">
+              Bridging design<br />
+              <span class="accent-glow">and engineering.</span>
+            </h2>
+            <p class="section-desc">
+              High-performance systems combined with intuitive interfaces — turning complex production workflows into seamless tools.
+            </p>
+          </div>
+        </div>
+
+        <!-- Frame Counter -->
+        <div id="frame-counter" class="frame-counter">00 / 74</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Work Grid -->
+  <section id="work" class="projects-section">
+    <div class="section-header">
+      <p class="eyebrow">Selected Work</p>
+      <div class="header-row">
+        <h2 class="header-title">Projects</h2>
+        <p class="header-desc">
+          13+ years of shipping at scale — from enterprise finance to Europe's largest fashion platform.
+        </p>
+      </div>
+      <div class="header-line"></div>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Card 01 -->
+      <div class="project-card" style="--card-color: #c8ff00; --card-glow: rgba(200, 255, 0, 0.12);">
+        <div class="card-top-line"></div>
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <span class="card-index">01</span>
+          <span class="card-period">2017 – Present</span>
+        </div>
+        <div class="card-subtitle">Zalando · Internal Platform</div>
+        <h3 class="card-title">Production Dashboard</h3>
+        <p class="card-desc">
+          End-to-end monitoring dashboard for the Content Creation Flow at Zalando. Gives real-time visibility into production pipelines across the fashion content organization.
+        </p>
+        <div class="card-tags">
+          <span class="tag">ReactJS</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Java 8</span>
+          <span class="tag">PostgreSQL</span>
+        </div>
+      </div>
+
+      <!-- Card 02 -->
+      <div class="project-card" style="--card-color: #a855f7; --card-glow: rgba(168, 85, 247, 0.12);">
+        <div class="card-top-line"></div>
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <span class="card-index">02</span>
+          <span class="card-period">2015 – 2016</span>
+        </div>
+        <div class="card-subtitle">Zalando · Internal Tool</div>
+        <h3 class="card-title">Model Management App</h3>
+        <p class="card-desc">
+          Internal application for managing model data and photoshoot scheduling across Zalando's content creation teams. Streamlined high-volume talent workflows.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">REST API</span>
+          <span class="tag">PostgreSQL</span>
+        </div>
+      </div>
+
+      <!-- Card 03 -->
+      <div class="project-card" style="--card-color: #f97316; --card-glow: rgba(249, 115, 22, 0.12);">
+        <div class="card-top-line"></div>
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <span class="card-index">03</span>
+          <span class="card-period">2013 – 2017</span>
+        </div>
+        <div class="card-subtitle">Zalando · Media Platform</div>
+        <h3 class="card-title">Content Media Tool</h3>
+        <p class="card-desc">
+          Core media management application powering Zalando's content ingestion and distribution pipeline. Handled high-throughput asset processing across product catalogs.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Java EE</span>
+          <span class="tag">Microservices</span>
+          <span class="tag">JPA</span>
+          <span class="tag">Docker</span>
+        </div>
+      </div>
+
+      <!-- Card 04 -->
+      <div class="project-card" style="--card-color: #06b6d4; --card-glow: rgba(6, 182, 212, 0.12);">
+        <div class="card-top-line"></div>
+        <div class="card-glow"></div>
+        <div class="card-header">
+          <span class="card-index">04</span>
+          <span class="card-period">2011 – 2013</span>
+        </div>
+        <div class="card-subtitle">BNP Paribas Securities Services</div>
+        <h3 class="card-title">CTS Debt Reporting</h3>
+        <p class="card-desc">
+          Enterprise-grade debt reporting web application for BNP Paribas Securities Services. Led backend development and test management for regulatory compliance.
+        </p>
+        <div class="card-tags">
+          <span class="tag">J2EE</span>
+          <span class="tag">Struts</span>
+          <span class="tag">Hibernate</span>
+          <span class="tag">Sybase</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Experience Timeline -->
+  <section id="experience" class="experience-section">
+    <p class="eyebrow">Career</p>
+    <h2 class="header-title">Experience</h2>
+
+    <div class="experience-list">
+      <div class="exp-row">
+        <span class="exp-period">2024 – Present</span>
+        <div class="exp-main">
+          <span class="exp-role">Senior Software Engineer</span>
+          <span class="exp-company">· Zalando</span>
+        </div>
+        <span class="exp-location">Berlin, DE</span>
+      </div>
+
+      <div class="exp-row">
+        <span class="exp-period">2013 – 2024</span>
+        <div class="exp-main">
+          <span class="exp-role">Software Engineer — Frontend & Backend</span>
+          <span class="exp-company">· Zalando</span>
+        </div>
+        <span class="exp-location">Berlin, DE</span>
+      </div>
+
+      <div class="exp-row">
+        <span class="exp-period">2011 – 2013</span>
+        <div class="exp-main">
+          <span class="exp-role">Java Consultant & Test Manager</span>
+          <span class="exp-company">· agap2 / BNP Paribas</span>
+        </div>
+        <span class="exp-location">Remote / Lisbon</span>
+      </div>
+
+      <div class="exp-row">
+        <span class="exp-period">2009 – 2011</span>
+        <div class="exp-main">
+          <span class="exp-role">Developer</span>
+          <span class="exp-company">· Wide Scope / Novabase</span>
+        </div>
+        <span class="exp-location">Portugal</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Skills Matrix -->
+  <footer id="about" class="footer-section">
+    <div class="footer-about">
+      <div>
+        <p class="eyebrow">About</p>
+        <p class="about-bio">
+          Senior Software Engineer at <strong>Zalando</strong> in Berlin, with over 13 years building scalable backend systems and modern frontends. I bridge engineering rigour with clean, purposeful design.
+        </p>
+
+        <div class="facts-table">
+          <div class="fact-item">
+            <span class="fact-label">Location</span>
+            <span class="fact-value">Berlin, Germany</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Current Role</span>
+            <span class="fact-value">Senior Software Engineer · Zalando</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Languages</span>
+            <span class="fact-value">English · French · Portuguese</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Education</span>
+            <span class="fact-value">BSc Computer Engineering · Univ. Politécnica de Viseu</span>
+          </div>
+        </div>
+
+        <a href="https://www.linkedin.com/in/nascimentoantonio" target="_blank" rel="noopener noreferrer" class="btn-accent">
+          View LinkedIn Profile
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M1 11L11 1M11 1H5M11 1V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="skills-column">
+        <div>
+          <p class="skill-category">Languages & Frameworks</p>
+          <div class="skills-pills">
+            <span class="skill-pill">Kotlin</span>
+            <span class="skill-pill">Java 8–14</span>
+            <span class="skill-pill">Spring Boot</span>
+            <span class="skill-pill">Golang</span>
+            <span class="skill-pill">React</span>
+            <span class="skill-pill">TypeScript</span>
+          </div>
+        </div>
+
+        <div>
+          <p class="skill-category">Data & Databases</p>
+          <div class="skills-pills">
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">JPA</span>
+            <span class="skill-pill">Hibernate</span>
+            <span class="skill-pill">MyBatis</span>
+            <span class="skill-pill">Flyway</span>
+            <span class="skill-pill">QueryDSL</span>
+          </div>
+        </div>
+
+        <div>
+          <p class="skill-category">DevOps & Tooling</p>
+          <div class="skills-pills">
+            <span class="skill-pill">AWS</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">Jenkins</span>
+            <span class="skill-pill">SonarQube</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">bash</span>
+          </div>
+        </div>
+
+        <div>
+          <p class="skill-category">Testing & Quality</p>
+          <div class="skills-pills">
+            <span class="skill-pill">JUnit</span>
+            <span class="skill-pill">Cucumber</span>
+            <span class="skill-pill">TDD</span>
+            <span class="skill-pill">Jest</span>
+            <span class="skill-pill">Selenium</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Links -->
+    <div id="contact" class="footer-contact">
+      <p class="eyebrow">Get in Touch</p>
+      <a href="mailto:tman126@gmail.com" class="contact-link">
+        <span class="contact-num">01</span>
+        <span class="contact-label">tman126@gmail.com</span>
+        <span class="contact-arrow">↗</span>
+      </a>
+      <a href="https://www.linkedin.com/in/nascimentoantonio" target="_blank" rel="noopener noreferrer" class="contact-link">
+        <span class="contact-num">02</span>
+        <span class="contact-label">LinkedIn — nascimentoantonio</span>
+        <span class="contact-arrow">↗</span>
+      </a>
+      <a href="https://github.com/antnascimento" target="_blank" rel="noopener noreferrer" class="contact-link">
+        <span class="contact-num">03</span>
+        <span class="contact-label">GitHub — antnascimento</span>
+        <span class="contact-arrow">↗</span>
+      </a>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="bottom-bar">
+      <span>© 2026 António Nascimento. All rights reserved.</span>
+      <div class="status-indicator">
+        <span class="status-dot"></span>
+        <span>Available for new opportunities</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
