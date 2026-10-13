@@ -28,12 +28,12 @@ The core mechanic of the website is an Awwwards-inspired, scroll-linked cinemati
 
 | Layer | Technology |
 |---|---|
-| **Framework** | Next.js (App Router) |
-| **Language** | TypeScript |
-| **Animation** | Framer Motion (`useScroll`, `useTransform`, `useMotionValueEvent`) |
+| **Framework** | Next.js (App Router) **AND** Pure Vanilla HTML/JS Standalone |
+| **Language** | TypeScript / JavaScript |
+| **Animation** | Framer Motion / Vanilla `requestAnimationFrame` + Interpolation |
 | **Rendering** | HTML5 2D Canvas API |
-| **Styling** | Tailwind CSS with custom glass utilities and dark aesthetic (`#121212`) |
-| **Typography** | Inter (`next/font/google`) |
+| **Styling** | Tailwind CSS / Pure CSS with glass utilities and dark aesthetic (`#121212`) |
+| **Typography** | Inter & JetBrains Mono |
 
 ---
 
@@ -41,9 +41,14 @@ The core mechanic of the website is an Awwwards-inspired, scroll-linked cinemati
 
 ```
 personal_site/
+├── standalone/             # ⭐ ZERO-SERVER VERSION: Pure HTML, CSS, JS + sequence/
+│   ├── index.html          # Double-click to open directly in any browser
+│   ├── styles.css          # Vanilla CSS matching dark aesthetic
+│   ├── script.js           # Vanilla JS canvas scrubber & parallax engine
+│   └── sequence/           # 75 WebP frames (frame_00_... to frame_74_...)
 ├── public/
-│   └── sequence/           # 75 WebP image sequence frames (frame_00_... to frame_74_...)
-├── src/
+│   └── sequence/           # Frames for Next.js version
+├── src/                    # Next.js 14/16 App Router codebase
 │   ├── app/
 │   │   ├── globals.css     # Dark theme reset, custom scrollbars, glass utilities
 │   │   ├── layout.tsx      # Root layout, metadata, and font configuration
@@ -56,6 +61,16 @@ personal_site/
 ├── tailwind.config.ts      # Design tokens and theme extension
 └── tsconfig.json           # TypeScript configuration
 ```
+
+---
+
+## ⚡ Option 1: Zero-Server Standalone (No Node.js Required)
+
+If you don't want to run a Node server or install npm packages, simply navigate to `standalone/`:
+
+1. Open `standalone/index.html` directly in your browser (double-click in Windows Explorer or open `file:///.../standalone/index.html`).
+2. Everything (canvas scrubber, preloader, parallax text, projects, and contact links) works out of the box with **zero dependencies**.
+3. Perfect for instant deployment on **GitHub Pages**, Netlify, or any static web host.
 
 ---
 
